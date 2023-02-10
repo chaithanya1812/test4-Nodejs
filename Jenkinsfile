@@ -56,11 +56,12 @@ pipeline
        stage('ssh-Agent'){
            steps{
                sshagent(['lop']) {
-                   sh "scp -o StrictHostKeyChecking=no nginx.conf ec2-user@3.110.193.52:/etc/nginx/nginx.conf "
+                   sh "scp -o StrictHostKeyChecking=no nginx.conf ec2-user@3.110.193.52:/etc/nginx/nginx.conf"
                    sh "ssh -o StrictHostKeyChecking=no ec2-user@3.110.193.52 sudo systemctl restart nginx"
                   }
            }
        }
    } 
 // For more Details refer the Image in README.md File
+}   
 
