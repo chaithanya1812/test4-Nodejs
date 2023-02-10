@@ -9,7 +9,7 @@ http.createServer(function(req,res){
 		case '/':
                         	res.writeHead(400, { 'Content-Type': 'text/plain' });
                         	res.write("<h>Welcome Chaithanya</h>");
-                                res.write("<h>/Node-JS Project sjfjsalfjlasf</h>");
+                                res.write("<h>/Node-JS Project</h>");
                         	res.end();
                         	break;
                 	case '/about':
