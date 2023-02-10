@@ -8,12 +8,13 @@ def chaitu = [
 pipeline
 {
     agent {
-      // This is job is run in another server, make sure that install git & docker on that server
+      // This is job is run in another server, make sure that install git & docker & nginx on that server
       
         label 'NodejsJobs'
     }
+    // Global Tool configuration Section
     tools{
-        nodejs 'NodeJS17.8.0'
+        nodejs 'NodeJS17.8.0' -
     }
     options {
      timestamps()
