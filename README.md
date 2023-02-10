@@ -44,7 +44,7 @@ server {
 events {}
 http {
 upstream chaitu{
-server 3.110.193.52:8081; -->This my workernode ip-address(3.110.193.52):container-host-port
+server 3.110.193.52:8081; -->This my workernode ip-address(3.110.193.52):container-host-port(you have to change it Mention)
 server 3.110.193.52:8082;                        
 server 3.110.193.52:8083;                
 server 3.110.193.52:8084;
