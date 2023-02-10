@@ -8,7 +8,7 @@ http.createServer(function(req,res){
 	switch(q_string) {
 		case '/':
                         	res.writeHead(400, { 'Content-Type': 'text/plain' });
-                        	res.write("<h2>Welcome Chaithanya</h2>");
+                        	res.write("<h2>Welcome Chaithanya Geetha</h2>");
                                 res.write("<h2>/Node-JS Project</h2>");
                         	res.end();
                         	break;
